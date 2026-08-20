@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>ConceptLens — Learn Anything Visually</title>
+
+  <meta
+    name="description"
+    content="Turn any topic into a visual learning experience with a quick trick, interesting concept, simple explanation and challenge."
+  >
+
+  <meta
+    name="keywords"
+    content="visual learning, education, learning concepts, study tricks, visual education"
+  >
+
+  <meta name="theme-color" content="#070a13">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <a class="logo" href="./">◉ ConceptLens</a>
+  <span>Learn by seeing</span>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="eyebrow">
+      VISUAL LEARNING FOR CURIOUS MINDS
+    </div>
+
+    <h1>
+      Turn one topic into<br>
+      <em>a visual story.</em>
+    </h1>
+
+    <p>
+      Get a memorable mental model, a quick trick,
+      an interesting idea, and a challenge — all from one topic.
+    </p>
+
+    <form id="form">
+
+      <input
+        id="topic"
+        aria-label="Topic"
+        placeholder="Try “How do black holes work?”"
+      >
+
+      <button type="submit">
+        Visualize →
+      </button>
+
+    </form>
+
+    <div class="chips">
+
+      <button data-topic="Black holes">
+        Black holes
+      </button>
+
+      <button data-topic="How airplanes fly">
+        Airplanes
+      </button>
+
+      <button data-topic="Photosynthesis">
+        Photosynthesis
+      </button>
+
+      <button data-topic="Quantum physics">
+        Quantum
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESULT -->
+  <section id="app" class="hidden">
+
+    <div class="topline">
+
+      <div>
+
+        <div class="eyebrow">
+          YOUR VISUAL STORY
+        </div>
+
+        <h2 id="title"></h2>
+
+      </div>
+
+      <button id="back" class="back">
+        ← New topic
+      </button>
+
+    </div>
+
+
+    <!-- VISUAL -->
+    <div class="visual">
+
+      <div class="planet"></div>
+
+      <div class="ring r1"></div>
+
+      <div class="ring r2"></div>
+
+      <div
+        class="label"
+        id="visualLabel"
+      ></div>
+
+    </div>
+
+
+    <!-- INFORMATION CARDS -->
+    <div class="grid">
+
+      <article>
+
+        <span>
+          ⚡ QUICK TRICK
+        </span>
+
+        <h3 id="trickTitle"></h3>
+
+        <p id="trick"></p>
+
+      </article>
+
+
+      <article>
+
+        <span>
+          ✦ INTERESTING CONCEPT
+        </span>
+
+        <h3 id="interestingTitle"></h3>
+
+        <p id="interesting"></p>
+
+      </article>
+
+
+      <article>
+
+        <span>
+          01 SIMPLE EXPLANATION
+        </span>
+
+        <h3 id="simpleTitle"></h3>
+
+        <p id="simple"></p>
+
+      </article>
+
+
+      <article>
+
+        <span>
+          ? TEST YOURSELF
+        </span>
+
+        <h3 id="challengeTitle"></h3>
+
+        <p id="challenge"></p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="steps">
+
+    <div>
+
+      <b>01</b>
+
+      <h3>
+        See it
+      </h3>
+
+      <p>
+        Build a mental picture instead of memorizing a paragraph.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <b>02</b>
+
+      <h3>
+        Remember it
+      </h3>
+
+      <p>
+        Use short analogies and surprising connections.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <b>03</b>
+
+      <h3>
+        Prove it
+      </h3>
+
+      <p>
+        Finish with a question that makes you think.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  ConceptLens · A visual-learning prototype
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
